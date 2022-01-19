@@ -1,3 +1,325 @@
 body{
-    background-color: brown;
+    background-color: rgb(39, 33, 33);
+    color:whitesmoke;
 }
+#left{
+    margin-left:20px;
+}
+#right{
+    display:flex;
+    margin-right:20px;
+}
+.access{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-style:1px solid white;
+}
+.separate{
+    width:70px;
+}
+#menu{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+}
+nav{
+    display:flex;
+    align-items:center;
+    width:100%;
+    margin-top:20px;
+}
+h1{
+    margin-top:20px;
+    text-align:center;
+}
+li{
+   
+    margin:20px;
+    
+}
+#login-box{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:200px;
+    
+}
+#login-box form{
+    display:flexbox;
+    text-align:center;
+    width:500px;
+    height:auto;
+    background-color:gray;
+    margin:20px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+#login-box form input{
+    color:black;
+    margin:10px;
+}
+#profile {
+    display:none;
+    margin-left:20px;
+    margin-top:20px;
+    justify-content:center;
+    align-items:center;
+}
+
+.textLogout{
+    color:red;
+}
+
+.logoutbutton{
+    width:50px;
+    height:50px;
+    border-radius:50px;
+}
+.icon{
+    width:40px;
+}
+.bars{
+    width:40px;
+}
+
+.desplegable{
+    display:none;
+    align-items:center;
+    text-align:center;
+    right:0px;
+    position:absolute;
+    width:20%;
+    background-color:rgb(102, 97, 97);
+    overflow:hidden;
+    border: 1px solid rgb(112, 110, 110);
+}
+.desplegable ul{
+    margin-top:10%;
+    margin-bottom:10%;
+}
+.elementButton{
+    margin-left:20px;
+    margin-top:20px;
+    width:auto;
+    height:20px;
+}
+.buttonProfile{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+}
+
+.subjects-list{
+    width:300px;
+    height:100%;
+    margin-top:30px;
+    width:30%;
+}
+
+#main{
+    display:flex;
+    margin-top:30px;
+    padding-bottom:30px;
+    width:100%;
+    min-height:50vh;    
+    height:auto;
+    background-color:rgba(109, 107, 107, 0.486);
+}
+
+#task{
+    display:flex;
+    flex-flow:column;
+    align-items:stretch;
+    flex-wrap: nowrap;
+    width:30%;
+    margin-top:30px;
+    margin-left:20px;
+    
+    color:rgb(48, 47, 47);
+    padding:20px;
+    
+}
+
+#listscase{
+    width:35%;
+}
+.newlist{
+    width:150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top:30px;
+}
+
+#lists-form{
+    width:300px;
+}
+#lists-form select, input{
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+#lists-form label{
+   line-height: 26px;
+   color:white;
+}
+
+.insertTaskJS{
+    display:none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.list-title{
+    font-size:25px;
+    transition:1s;
+    font-family: 'Roboto', sans-serif;
+}
+.list-title:hover{
+    font-size:27px;
+    transition:1s;
+}
+.class-data{
+    width:auto;
+}
+.taskdesc{
+    color:rgb(172, 167, 167);
+    width:100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.taskdesc:hover{
+    overflow:auto;
+}
+.teacher{
+    color:rgb(172, 167, 167);
+}
+th td tr{
+    text-align:center;
+    width:20%;
+    align-items:center;
+    padding:20%;
+}
+table{
+    width:100%;
+    align-items:center;
+    text-align:center;
+}
+table, th, td {
+    border:1px solid black;
+  }
+
+  .adminformbuttons{
+      width:120px;
+      height:120px;
+      background-color:rgb(39, 33, 33);
+      border-spacing:100px;
+      margin:20px;
+      transition:0.3s;
+  }
+  .adminformbuttons:hover{
+      width:130px;
+      height:130px;
+      transition:0.1s;
+      background-color:rgb(73, 67, 67);
+  }
+  #adminstrationform{
+      width:100%;
+      display:flex;
+      border-spacing:100px;
+      justify-content:center;
+  }
+  .adminspawn{
+      display:block;
+      width:100%;
+      height:auto;
+  }
+  #administration{
+      display:block;
+      width:100%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  #formData{
+    margin-left: auto; 
+    margin-right: auto;
+      align-items:center;
+      width:50%;
+      height:auto;
+  }
+  .iconadmin{
+      width:32px;
+      height:32px;
+  }
+  .icontd{
+    margin-left: auto;
+    margin-right: auto;
+    align-items:center;
+    text-align:center;
+    margin: auto 0;
+  }
+  .iconadmin{
+    align-items:center;
+    text-align:center;
+    margin: 0 auto; 
+  }
+
+  #admintable tr td{
+      align-items:center;
+      text-align:center;
+      margin-left: auto;
+      margin-right: auto;
+      margin: 0 auto; 
+  }
+  #userDataSelector{
+      background-color:rgb(39, 33, 33);
+  }
+  #userDataSelector2{
+    background-color:rgb(39, 33, 33);
+    text-align:center;
+    margin: 0 auto; 
+}
+  #studentDataSelector{
+    background-color:rgb(39, 33, 33);
+  }
+  .buttonsubmit{
+      background-color:rgb(39, 33, 33);
+      color:white;
+  }
+  .displayed{
+      display:none;
+      margin: 0 auto; 
+  }
+  #formdata{
+      align-items:center;
+  }
+  #userDataSelector{
+      display:none;
+    text-align:center;
+    margin: 0 auto; 
+  }
+  .organize{
+      width:100%;
+      display:block;
+      text-align:center;
+      margin: 0 auto; 
+  }
+  .organize input{
+      color:black;
+  }
+  .useradmin{
+      display:none;
+  }
+  .studentsadmin{
+      display:none;
+  }
+  .teachersadmin{
+      display:none;
+  }
+  .subjectsadmin{
+      display:none;
+  }

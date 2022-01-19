@@ -35,4 +35,21 @@ class Registry
 
         return static::$services[$key];
     }
+
+    //metodo para comprobar usuario por mail y conocer si es profesor
+    public static function isTeacher($email){
+        if(preg_match("/@escolesnuria.cat/",$email)){
+            return 2;   //en la base de datos "1=alumn" -> "2 = teacher"
+        }
+        return 1;
+    }
+    //comprovación de 2 contraseñas ("hasehadas")
+    public static function passwordVerify($pass, $dbPass){
+        if($pass === $dbPass){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 }

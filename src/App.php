@@ -20,9 +20,9 @@
             $controller=self::$req->getController();
             
             self::$action=self::$req->getAction();
-         
+            
             self::dispatch($controller,$routes,$session);
-
+            
         }
         
         private static function dispatch($controller,$routes,$session):void 

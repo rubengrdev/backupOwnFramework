@@ -10,7 +10,7 @@
         function __construct(){
             $requestString=\htmlentities($_SERVER['REQUEST_URI']);
             //adaptar el sistema root a domini o carpeta
-            $reqStr=$this->get_diff($requestString,ROOT);  
+            $reqStr=$this->get_diff($requestString,$_ENV['ROOT']);  
             //extract URI
             $this->arrURI=explode('/',$reqStr);
            
@@ -40,6 +40,7 @@
                         $this->setAction($this->arrURI[1]);
                     }
                 break;
+                
                 default: // cont. & act & params
                     $this->setController($this->arrURI[0]);
                     $this->setAction($this->arrURI[1]);

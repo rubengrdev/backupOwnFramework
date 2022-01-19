@@ -27,12 +27,13 @@ final class Session{
      *
      * @return mixed|null Returns the value on success. NULL if the key doesn't exist.
      */
-    public function get($key) {
+    public static function get($key) {
         if(array_key_exists($key, $_SESSION)) {
             return $_SESSION[$key];
         }
         return null;
     }
+   
 
     /**
      * Set a new session elements or update an existing one.
@@ -40,7 +41,7 @@ final class Session{
      * @param string $key
      * @param mixed  $value
      */
-    public function set($key, $value) {
+    public static function set($key, $value) {
         $_SESSION[$key] = $value;
     }
     public function unset($key){
@@ -71,11 +72,14 @@ final class Session{
      *
      * @return bool
      */
-    public function exists($key) {
-        return array_key_exists($key, $_SESSION);
+    public static function exists($key) {
+        if(is_int($key) || is_string($key)){
+            return array_key_exists($key, $_SESSION);
+        }
+        return  $_SESSION[$key];
     }
 
-    public function destroy(){
+    public static function destroy(){
         session_destroy();
     }
 

@@ -15,8 +15,10 @@ class IndexController extends Controller{
 
         public function index()
         {
-            $roles = Registry::get('database')->selectAll('roles');
-             
-            return view('index', compact('roles'));
+            //$roles = Registry::get('database')->selectAll('roles');
+            //return view('index', compact('roles'));
+            return view("index");
         }
+
+        
     }
